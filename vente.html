@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de Fromage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Acheter nos produits</h1>
+        <div class="menu-container">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="vente.html">Vente</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="tabs">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="vente.html">Vente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="new-sale-alert">
+        <a href="nouvelle-vente.html">
+            <button class="blinking-button">EXCLUSIF : Vente de Beuh Nectaire !</button>
+        </a>
+
+    </div>
+    <!-- Section pour un fromage entier -->
+    <div class="products-container">
+        <section class="product" id="entier">
+            <img src="./Saint_nectaire.png" alt="Saint Nectaire" class="product-image">
+            <div class="product-info">
+                <h2>Saint Nectaire Fermier Entier</h2>
+                <p class="price">28,00 €</p>
+                <p class="description">Découvrez notre fromage fermier, le Saint Nectaire entier, un produit artisanal affiné avec soin, pour un goût authentique.</p>
+
+                <!-- Formulaire de commande pour le fromage entier -->
+                <form action="confirmation.php" method="POST" class="order-form">
+                    <fieldset>
+                        <legend>Commande - Saint-Nectaire entier</legend>
+                        <input type="hidden" name="prix_unitaire" value="28.00">
+
+                        <label for="prenom-entier">Prénom:</label>
+                        <input type="text" id="prenom-entier" name="prenom" placeholder="Votre prénom" required><br>
+
+                        <label for="nom-entier">Nom:</label>
+                        <input type="text" id="nom-entier" name="nom" placeholder="Votre nom" required><br>
+
+                        <label for="email-entier">E-mail:</label>
+                        <input type="email" id="email-entier" name="email" placeholder="Votre e-mail" required><br>
+
+                        <label for="adresse-entier">Adresse:</label>
+                        <textarea id="adresse-entier" name="adresse" placeholder="Votre adresse complète" required></textarea><br>
+
+                        <label for="quantite-entier">Quantité:</label>
+                        <input type="number" id="quantite-entier" name="quantite" min="1" value="1" required><br>
+
+                        <button type="submit" class="buy-btn">
+                            <img src="icon-buy.png" alt="" class="button-icon"> Acheter Maintenant
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section pour une moitié de Saint Nectaire -->
+        <section class="product" id="demi">
+            <img src="./demi_saint_nectaire.png" alt="Moitié de Saint Nectaire" class="product-image">
+            <div class="product-info">
+                <h2>Moitié de Saint Nectaire Fermier</h2>
+                <p class="price">14,00 €</p>
+                <p class="description">Profitez de la moitié de notre Saint Nectaire fermier, pour une expérience gustative intense avec un fromage artisanal affiné.</p>
+
+                <!-- Formulaire de commande pour la moitié de fromage -->
+                <form action="confirmation.php" method="POST" class="order-form">
+                    <fieldset>
+                        <legend>Commande - Demi Saint-Nectaire</legend>
+                        <input type="hidden" name="prix_unitaire" value="14.00">
+
+                        <label for="prenom-demi">Prénom:</label>
+                        <input type="text" id="prenom-demi" name="prenom" placeholder="Votre prénom" required><br>
+
+                        <label for="nom-demi">Nom:</label>
+                        <input type="text" id="nom-demi" name="nom" placeholder="Votre nom" required><br>
+
+                        <label for="email-demi">E-mail:</label>
+                        <input type="email" id="email-demi" name="email" placeholder="Votre e-mail" required><br>
+
+                        <label for="adresse-demi">Adresse:</label>
+                        <textarea id="adresse-demi" name="adresse" placeholder="Votre adresse complète" required></textarea><br>
+
+                        <label for="quantite-demi">Quantité:</label>
+                        <input type="number" id="quantite-demi" name="quantite" min="1" value="1" required><br>
+
+                        <button type="submit" class="buy-btn">
+                            <img src="icon-buy.png" alt="" class="button-icon"> Acheter Maintenant
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section pour un quart de Saint Nectaire -->
+        <section class="product" id="quart">
+            <img src="./quart_saint_nectaire.png" alt="Quart de Saint Nectaire" class="product-image">
+            <div class="product-info">
+                <h2>Quart de Saint Nectaire Fermier</h2>
+                <p class="price">7,00 €</p>
+                <p class="description">Un quart de Saint Nectaire fermier affiné, idéal pour une petite dégustation de saveurs authentiques et artisanales.</p>
+
+                <!-- Formulaire de commande pour le quart de fromage -->
+                <form action="confirmation.php" method="POST" class="order-form">
+                    <fieldset>
+                        <legend>Commande - Quart Saint-Nectaire</legend>
+                        <input type="hidden" name="prix_unitaire" value="7.00">
+
+                        <label for="prenom-quart">Prénom:</label>
+                        <input type="text" id="prenom-quart" name="prenom" placeholder="Votre prénom" required><br>
+
+                        <label for="nom-quart">Nom:</label>
+                        <input type="text" id="nom-quart" name="nom" placeholder="Votre nom" required><br>
+
+                        <label for="email-quart">E-mail:</label>
+                        <input type="email" id="email-quart" name="email" placeholder="Votre e-mail" required><br>
+
+                        <label for="adresse-quart">Adresse:</label>
+                        <textarea id="adresse-quart" name="adresse" placeholder="Votre adresse complète" required></textarea><br>
+
+                        <label for="quantite-quart">Quantité:</label>
+                        <input type="number" id="quantite-quart" name="quantite" min="1" value="1" required><br>
+
+                        <button type="submit" class="buy-btn">
+                            <img src="icon-buy.png" alt="" class="button-icon"> Acheter Maintenant
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- Bouton Liste des commandes -->
+    <div class="order-button-container">
+        <a href="admin_commandes.php" class="order-button">
+            <strong>Liste des commandes</strong><br>
+            <span>Réservé aux membres de l'équipe</span>
+        </a>
+    </div>
+    <footer>
+        <p>© 2024 Fromagerie Artisanale - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
